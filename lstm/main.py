@@ -232,5 +232,5 @@ def main_best_params():
 
 if __name__ == '__main__':
     # main_gridsearch()
-    # main_best_params()
-    extract_files()
+    main_best_params()
+    # extract_files()
