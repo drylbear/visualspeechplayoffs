@@ -18,6 +18,7 @@ lstm/
 │  └──59F	
 ├──data/	
 │  ├──logs/
+│  ├──aam/
 │  ├──sequence/
 │  ├──train/
 │  │  ├──01M
@@ -34,8 +35,15 @@ lstm/
 The TCD-TIMIT dataset should be in the ´original´ folder, with a subfolder for each speaker. The data folder contains all the data needed for training. In the ´train´ folder all the cropped and processed images for feature extraction are stored. In the ´resnet´ folder, all the images for features extraction using the ResNet50 are storred.
 
 
+### Prerequisites for feature calculation
+
+- For calculating the SIFT features, please look at the ´bagofwords´ folder in the root of this repository and copy the created ´bow_model.pkl´ into the ´lstm´ folder.
+- For calculating the AAM features, pleace look into the corresponding folder as well and copy the output  files into the ´data/aam´ folder.
+- The other features should not requiere any further preparations
+
 
 ### First time running
 
 For the first time running, be sure to call the function ´extract_files()´ in the main.py file. This will calculate all the features necessary for running the training data. If everything went smoothly, comment out the ´extract_files()´ and uncomment the ´main_best_params()´ function in the main.py file and run it again for training the network.
+
 
