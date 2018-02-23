@@ -10,26 +10,26 @@ git clone https://github.com/drylbear/visualspeechplayoffs.git
 ```
 Create a new enviorment and install the dependencies in the requierments.txt file. Also create the following folder structure for the LSTM project:
 
-lstm/
-├──original/
-│  ├──01M
-│  ├──02F
-│  ├──...
-│  └──59F	
-├──data/	
-│  ├──logs/
-│  ├──sequence/
-│  ├──train/
-│  │  ├──01M
-│  │  ├──02F
-│  │  ├──...
-│  │  └──59F
-│  └──resnet/
-│     ├──01M
-│     ├──02F
-│     ├──...
-│     └──59F
-└──predictor/
+lstm<br/>
+├──original<br/>
+│  ├──01M<br/>
+│  ├──02F<br/>
+│  ├──...<br/>
+│  └──59F	<br/>
+├──data<br/>
+│  ├──logs<br/>
+│  ├──sequence<br/>
+│  ├──train<br/>
+│  │  ├──01M<br/>
+│  │  ├──02F<br/>
+│  │  ├──...<br/>
+│  │  └──59F<br/>
+│  └──resnet<br/>
+│     ├──01M<br/>
+│     ├──02F<br/>
+│     ├──...<br/>
+│     └──59F<br/>
+└──predictor<br/>
 
 The TCD-TIMIT dataset should be in the ´original´ folder, with a subfolder for each speaker. The data folder contains all the data needed for training. In the ´train´ folder all the cropped and processed images for feature extraction are stored. In the ´resnet´ folder, all the images for features extraction using the ResNet50 are storred.
 
